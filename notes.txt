@@ -1,0 +1,15 @@
+Differences or notes 
+
+4 videos:
+1. Learn the MERN Stack - Express and MongoDB Rest API
+2. Learn the MERN Stack - JWT Authentication
+3. Learn the MERN Stack - Frontent Authentication| Redux Toolkit
+4. Learn the MERN Stack - Redux Goals & Deploy
+
+Review RESTful routing
+https://zatokey.medium.com/cheat-sheet-curd-fetch-api-1d1560d8e207
+https://medium.com/@atharvakulkarniamk/restful-routing-mapping-rest-to-crud-dbb2f32f748c
+
+after npm init
+$ npm i express dotenv mongoose colors
+$ npm i -D nodemon
