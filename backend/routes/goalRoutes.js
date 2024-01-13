@@ -1,0 +1,24 @@
+const express = require('express');
+const router = express.Router();
+const { getGoals, setGoal, updateGoal, deleteGoal } = require('../controllers/goalController')
+
+// you could update to 
+// router.route('/').get(getGoals).post(setGoal)
+// and 
+// router.route('/:id).delete(deleteGoal).put(updateGoal)
+// but the below code matches better with the coding style in class
+
+router.get('/', getGoals
+// move this functionality to the controller
+// (req, res) => {
+//     res.status(200).json({message: 'get goals'});
+// }
+)
+
+router.post('/', setGoal)
+
+router.put('/:id', updateGoal)
+
+router.delete('/:id', deleteGoal)
+
+module.exports = router;

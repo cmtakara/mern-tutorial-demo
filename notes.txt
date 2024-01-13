@@ -1,4 +1,7 @@
 Differences or notes 
+GENERAL NOTES:
+in our full-stack applications, we were using one folder for the front and backend, and it was a React application using VITE, 
+so we use the .cjs extension (common JS) for the backend files so that they would be interpreted correctly.
 
 4 videos:
 1. Learn the MERN Stack - Express and MongoDB Rest API
@@ -6,10 +9,36 @@ Differences or notes
 3. Learn the MERN Stack - Frontent Authentication| Redux Toolkit
 4. Learn the MERN Stack - Redux Goals & Deploy
 
+VIDEO 1 NOTES: 
+
 Review RESTful routing
 https://zatokey.medium.com/cheat-sheet-curd-fetch-api-1d1560d8e207
 https://medium.com/@atharvakulkarniamk/restful-routing-mapping-rest-to-crud-dbb2f32f748c
 
+
 after npm init
 $ npm i express dotenv mongoose colors
 $ npm i -D nodemon
+
+most steps for initializing and setting up server are the same
+be careful of spacing in the .env file, don't include them around the equals sign
+
+NOTE: the file naming is a little bit different
+-----
+controllers/goalController.js
+routes/goalRoutes.js
+-----
+VERSUS
+-----
+controllers/goals.js
+routes/goals.js
+-----
+
+If you are using Postman, at 27 minutes in, when we are working on setting the first goal...
+choose Body
+then choose x-www-form-encoded
+then key is text and value is "My First Goal"
+
+
+$ npm i express-async-handler
+using this instead of try{}catch(err){}
