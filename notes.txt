@@ -42,3 +42,17 @@ then key is text and value is "My First Goal"
 
 $ npm i express-async-handler
 using this instead of try{}catch(err){}
+
+// ============ ONCE YOU GET TO THE MONGODB PART
+// you don't need to install compass, you can check your database information online 
+// you can skip the setup steps for the mongoDB atlas - all the way through the shared cluster
+// you should have your username and password in the .env from one of your other applications 
+the MONGO_URI is the same string we've been using in the .env to connect to the db, just update the name of the collection at the end
+you can also add the 
+?retryWrites=true&w=majority
+if you don't have it
+
+**** MAJOR NOTE ***
+use:
+    const deletedGoal = await Goal.findByIdAndDelete(req.params.id);
+	rather than findByIdAndRemove
