@@ -69,3 +69,35 @@ you may not have seen this
         throw new Error('Goal not found');
     }
     
+=================================================================================================================================
+=================================================================================================================================
+
+video 2 notes
+
+=================================================================================================================================
+=================================================================================================================================
+
+Adding authentication using JWT
+
+adding in the user model, routes, and controllers.  All of these should look pretty similar to the model, routes, controllers for the user in the 
+mern-infrastructure example that we have.
+
+npm i bcryptjs
+npm i jsonwebtoken
+
+you can check the data in the database in the web interface, you don't need to download compass
+
+
+// if you kept the routes individual, your updated routes, with the protect, should look like this:
+router.get('/', protect, getGoals);
+router.post('/', protect, setGoal);
+router.put('/:id', protect, updateGoal);
+router.delete('/:id', protect, deleteGoal);
+
+**** MAJOR NOTE ***
+in the mern-infrastructure example, some things look different in the user model.
+some of the fields in the models are different, but both user models do roughly the same things
+in the class example, we did the hashing in the user model, rather than in the controller
+some of the function names are different, but overall the functionality of the user model and the authentication 
+and the authorization are pretty similar
+you can also see that the protected routes use similar functionality, it's just that they are two different examples of routes 
