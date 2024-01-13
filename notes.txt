@@ -7,6 +7,7 @@ so we use the .cjs extension (common JS) for the backend files so that they woul
 1. Learn the MERN Stack - Express and MongoDB Rest API
 	https://youtu.be/-0exw-9YJBo?si=KrealFWmXFUB6Wdf 
 2. Learn the MERN Stack - JWT Authentication
+	https://youtu.be/enopDSs3DRw?si=VlPT7PXdDNk92ecA
 3. Learn the MERN Stack - Frontent Authentication| Redux Toolkit
 4. Learn the MERN Stack - Redux Goals & Deploy
 
