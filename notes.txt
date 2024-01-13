@@ -5,6 +5,7 @@ so we use the .cjs extension (common JS) for the backend files so that they woul
 
 4 videos:
 1. Learn the MERN Stack - Express and MongoDB Rest API
+	https://youtu.be/-0exw-9YJBo?si=KrealFWmXFUB6Wdf 
 2. Learn the MERN Stack - JWT Authentication
 3. Learn the MERN Stack - Frontent Authentication| Redux Toolkit
 4. Learn the MERN Stack - Redux Goals & Deploy
@@ -55,4 +56,16 @@ if you don't have it
 **** MAJOR NOTE ***
 use:
     const deletedGoal = await Goal.findByIdAndDelete(req.params.id);
-	rather than findByIdAndRemove
+	rather than 
+	await goal.remove();
+    
+
+	
+you may not have seen this 
+    const goal = await Goal.findById(req.params.id);
+
+    if (!goal) {
+        res.status(400);
+        throw new Error('Goal not found');
+    }
+    
