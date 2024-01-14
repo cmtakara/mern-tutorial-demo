@@ -9,6 +9,7 @@ so we use the .cjs extension (common JS) for the backend files so that they woul
 2. Learn the MERN Stack - JWT Authentication
 	https://youtu.be/enopDSs3DRw?si=VlPT7PXdDNk92ecA
 3. Learn the MERN Stack - Frontent Authentication| Redux Toolkit
+  https://youtu.be/mvfsC66xqj0?si=_ajztJ3A_WE1i15S 
 4. Learn the MERN Stack - Redux Goals & Deploy
 
 VIDEO 1 NOTES: 
@@ -133,3 +134,17 @@ $ mkdir frontend/src/store
 npm i react-router-dom
 npm i react-icons
 /// these are both in frontend, not the root directory
+check the package.json in both the root and the front end to see all of the installs (not all are listed here)
+
+//
+// 	to set up the proxy in the vite react application, the following needs to go into vite.config
+THE {port} is the port that your server is running on
+server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:{port}',
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+  },
