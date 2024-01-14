@@ -102,3 +102,34 @@ in the class example, we did the hashing in the user model, rather than in the c
 some of the function names are different, but overall the functionality of the user model and the authentication 
 and the authorization are pretty similar
 you can also see that the protected routes use similar functionality, it's just that they are two different examples of routes 
+
+=================================================================================================================================
+=================================================================================================================================
+
+video 3 notes
+
+=================================================================================================================================
+=================================================================================================================================
+
+the first difference is creating the react application
+create the react app as normal
+npm create vite@latest
+choosing the name and then React and JavaScript
+cd and npm i to install dependencies
+then 
+$ npm i @reduxjs/toolkit react-redux
+
+below is an article "how to use React(Vite.js) with Redux"
+https://medium.com/@ishdagnesh/how-to-use-react-vite-js-with-redux-0aaf60835052
+
+This also means that you want the command in package.json in the root to be:
+    "client": "npm run dev --prefix frontend"
+
+Also remember to use the .jsx for the frontend React files files
+
+to create the store folder and files
+$ mkdir frontend/src/store
+
+npm i react-router-dom
+npm i react-icons
+/// these are both in frontend, not the root directory
